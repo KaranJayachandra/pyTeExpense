@@ -11,7 +11,7 @@ class GraphGenerator:
         plotText = '`ET: Daily Expenses\n'
         plotText += '------------------\n'
         for iDay in range(len(totalExpense)):
-            plotText += str(iDay).zfill(2)
+            plotText += str(iDay + 1).zfill(2)
             dataPercent = int(round(totalExpense[iDay] * 100 / totalBudget))
             plotText += ' [' + str(int(dailyExpense[iDay])).rjust(3) + '€ ('
             plotText += str(dataPercent).rjust(3) + ' %)] |'
