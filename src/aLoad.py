@@ -1,5 +1,3 @@
-from sys import path
-path.append('src')
 from pandas import read_csv
 from datetime import datetime
 from tracker import ExpenseTracker
