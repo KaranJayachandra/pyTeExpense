@@ -1,4 +1,3 @@
-
 from unittest import TestCase, main
 from tinydb import TinyDB, Query
 from datetime import datetime, timedelta
