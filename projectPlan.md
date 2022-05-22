@@ -35,6 +35,6 @@ I can use the information I collected last month and the current month and store
 - Release 0.1: Check for expenses (in correct format) and list all the expenses
 - Release 0.2: Report the expense vs. budget in text form
 - Release 0.3: Report the expense vs. budget using gnuplotlib
-- Release 0.4: Register Vendors and allow expenses for those only
+- Release 0.4: Register Vendors and allow expenses for those only (EDIT: This is cancelled because a vendor can below to multiple categories)
 - Release 0.5: Edit expense via request
 - Release 0.5: Set and edit budget via message
