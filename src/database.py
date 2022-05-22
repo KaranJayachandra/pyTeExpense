@@ -2,7 +2,7 @@ from unittest import TestCase, main
 from tinydb import TinyDB, Query
 from datetime import datetime, timedelta
 from calendar import monthrange
-from utils import budgets
+from helper import budgets
 
 from pandas import read_csv, to_datetime
 from os import remove
@@ -35,7 +35,7 @@ class ExpenseDatabase:
         self.expenses.close()
 
 def testHelper():
-    referenceFileName = 'testData.csv'
+    referenceFileName = './data/testData.csv'
     dbFileName = 'databaseUnitTest.json'
     reference = read_csv(referenceFileName, delimiter=';')
     try:

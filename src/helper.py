@@ -1,8 +1,8 @@
 from datetime import datetime
 
-app_name = '<app_name>'
-api_id = '<app_id>'
-api_hash = '<app_hash>'
+app_name = 'app_name'
+api_id = 'app_id'
+api_hash = 'app_hash'
 budgets =  {'HOUSING': 700.0, 
             'LOAN': 750.0,
             'SAVINGS': 500.0,

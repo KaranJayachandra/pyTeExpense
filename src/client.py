@@ -1,7 +1,7 @@
 from unittest import TestCase, main
 from telethon import TelegramClient
 from asyncio import get_event_loop
-from utils import budgets, testData, app_name, api_id, api_hash
+from helper import budgets, testData, app_name, api_id, api_hash
 
 class Client:
     def __init__(self, app_name, api_id, api_hash):

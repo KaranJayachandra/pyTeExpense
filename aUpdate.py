@@ -1,8 +1,8 @@
 from sys import path
+path.append('src')
 from datetime import datetime
-path.insert(0, "./src")
-from ..src.tracker import ExpenseTracker
-from ..src.utils import app_name, api_id, api_hash
+from tracker import ExpenseTracker
+from helper import app_name, api_id, api_hash
 
 def main():
     dbFileName = 'main.json'

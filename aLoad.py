@@ -1,9 +1,9 @@
 from sys import path
+path.append('src')
 from pandas import read_csv
 from datetime import datetime
-path.insert(0, "./src")
 from tracker import ExpenseTracker
-from utils import app_name, api_id, api_hash
+from helper import app_name, api_id, api_hash
 
 def main():
     testDataFile = './data/testData.csv'

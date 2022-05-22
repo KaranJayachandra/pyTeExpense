@@ -2,10 +2,10 @@ from unittest import TestCase, main
 from os import remove
 from pandas import read_csv
 from datetime import datetime
-from utils import testData, app_name, api_id, api_hash
+from helper import testData, app_name, api_id, api_hash
 
 from database import ExpenseDatabase
-from formatter import GraphGenerator
+from textParser import GraphGenerator
 from client import Client
 
 class ExpenseTracker():
@@ -27,7 +27,7 @@ class ExpenseTracker():
 
 class TestExpenseTracker(TestCase):
     def test_application(self):
-        testDataFile = 'testData.csv'
+        testDataFile = './data/testData.csv'
         dbFileName = 'databaseUnitTest.json'
         try:
             remove(dbFileName)
