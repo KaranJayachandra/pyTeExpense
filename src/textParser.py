@@ -1,4 +1,3 @@
-from unittest import TestCase
 from unittest import TestCase, main
 from numpy import asarray, cumsum, round
 from math import ceil
@@ -18,7 +17,7 @@ class GraphGenerator:
             bar = (totalExpense[iDay] * outputWidth) / totalBudget
             for iData in range(outputWidth):
                 if iData < ceil(bar):
-                    plotText += 'o'
+                    plotText += '>'
                 else:
                     plotText += '.'
             plotText += '|\n'
@@ -36,7 +35,7 @@ class GraphGenerator:
             bar = (iValue * outputWidth) / budgets[iCategory.upper()]
             for iData in range(outputWidth):
                 if iData < ceil(bar):
-                    plotText += 'o'
+                    plotText += '>'
                 else:
                     plotText += '.'
             plotText += '|\n'
